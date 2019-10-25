@@ -1,0 +1,9 @@
+package com.janani.demo;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+public interface EmployRepository extends CrudRepository<Employ, Integer> {
+	@Query("SELECT e from Employ e ")
+
+}
